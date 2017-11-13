@@ -27,7 +27,7 @@ module Rack
       end
 
       def insert_env_ribbon_into_body_tag!
-        content = "<a class=\"github-fork-ribbon left-top red fixed\" onClick=\"this.style.display='none'\" title=\"#{env}\">#{env}</a>"
+        content = "<a class=\"github-fork-ribbon right-top red fixed\" onClick=\"this.style.display='none'\" title=\"#{env}\">#{env}</a>"
         insert_into('body', content, new_line: true)
       end
 
